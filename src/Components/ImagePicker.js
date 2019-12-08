@@ -1,7 +1,9 @@
 import { Icon, Image } from 'react-native-elements';
 import React, { useCallback, useState } from 'react';
-import { ActivityIndicator } from 'react-native';
+import { ActivityIndicator, Dimensions, TouchableOpacity } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
+
+const { width } = Dimensions.get('window')
 
 const options = {
   title: 'Select Image',
@@ -39,12 +41,15 @@ export const ImagePickerComponent = () => {
         onPress={pickImage}
       />
       {newImage && (
-        <Image
-          style={{width, height: 300}}
-          source={item}
-          resizeMode="cover"
-          PlaceholderContent={<ActivityIndicator size="large" />}
-        />)}
+        <TouchableOpacity onPress={() => setNewImage()}>
+          <Image
+            style={{width, height: 300}}
+            source={newImage}
+            resizeMode="cover"
+            PlaceholderContent={<ActivityIndicator size="large" />}
+          />
+        </TouchableOpacity>
+        )}
     </>
   )
 }
