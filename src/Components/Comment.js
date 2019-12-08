@@ -4,4 +4,5 @@ import { TouchableOpacity } from 'react-native';
 
 export const Comment = () => {
   // Ваш код здесь
+  return (<></>)
 }
