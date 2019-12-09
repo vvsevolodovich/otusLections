@@ -45,3 +45,7 @@ List:
 * [Put fonts to plist file](https://github.com/oblador/react-native-vector-icons#installation)
 * [Put permissions to plist](https://github.com/react-native-community/react-native-image-picker/blob/master/docs/Install.md)
 * [Lottie installation problem](https://github.com/react-native-community/lottie-react-native/issues/575)
+
+## Домашнее задание
+
+https://docs.google.com/document/d/1bQw1Cxue9iXk76yPe4HcNO5lXJ6OSowwf98ynUlKXeA/edit
