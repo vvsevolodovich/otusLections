@@ -49,3 +49,7 @@ List:
 ## Домашнее задание
 
 https://docs.google.com/document/d/1bQw1Cxue9iXk76yPe4HcNO5lXJ6OSowwf98ynUlKXeA/edit
+
+## Ссылка на опрос
+
+https://otus.ru/polls/5400/
