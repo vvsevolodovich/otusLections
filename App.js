@@ -5,6 +5,7 @@ import logger from 'redux-logger';
 import {ThemeProvider} from 'react-native-elements';
 import NewPostScreen from './src/NewPostScreen';
 import reducers from './src/reducers/';
+import LoginScreen from './src/LoginScreen';
 
 const theme = {
   colors: {
@@ -22,7 +23,7 @@ const store = createStore(reducers, applyMiddleware(logger));
 const AppContainer = () => (
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-      <NewPostScreen />
+      <LoginScreen />
     </ThemeProvider>
   </Provider>
 );
