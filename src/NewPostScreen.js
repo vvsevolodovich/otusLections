@@ -5,6 +5,7 @@ import {
   View,
   ScrollView,
   ActivityIndicator,
+  Text,
 } from 'react-native';
 import {Button, Input} from 'react-native-elements';
 
@@ -13,6 +14,17 @@ import {connect} from 'react-redux';
 import {setNewPostComment, publishPost} from './actions/NewPostActions';
 
 class NewPostScreen extends React.Component {
+  static navigationOptions = {
+    headerTitle: () => <Text>New Post</Text>,
+    headerRight: () => (
+      <Button
+        onPress={() => alert('This is a button!')}
+        title="Info"
+        color="#fff"
+      />
+    ),
+  };
+
   render() {
     const {comment, setComment, publish} = this.props;
     return (

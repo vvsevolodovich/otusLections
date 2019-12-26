@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import {Button, Input} from 'react-native-elements';
+import { saveToken } from './storage';
 
 import {connect} from 'react-redux';
 import {performLogin} from './actions/LoginActions';
@@ -32,8 +33,9 @@ class NewPostScreen extends React.Component {
           {this.props.loading && <ActivityIndicator />}
           <Button
             title="LOGIN"
-            onPress={() => {
-              doLogin();
+            onPress={async () => {
+              await saveToken('mytesttoken')
+              this.props.navigation.navigate('Main');
             }}
           />
         </View>
